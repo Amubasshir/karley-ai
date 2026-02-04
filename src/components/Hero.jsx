@@ -55,7 +55,7 @@ const Hero = () => {
       </div>
 
       {/* --- RIGHT COLUMN: Visual/Interactive --- */}
-      <div className="w-full lg:w-1/2 relative h-[450px] md:h-[800px] lg:h-auto">
+      <div className="w-full lg:w-1/2 relative h-[450px] md:h-[915px]  lg:h-[975px]">
         {/* Background Image Container */}
         <div className="absolute inset-0 overflow-hidden">
           {/* Optional: A subtle blur or overlay to blend the image into the gradient */}
