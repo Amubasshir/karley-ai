@@ -27,7 +27,7 @@ const ProcessSection = () => {
 
       <div className="max-w-full mx-auto relative z-10 flex flex-col items-center">
         {/* Button Animation Section */}
-        <div className="relative flex items-center justify-center h-20 w-full mb-8 md:mb-16 px-4 md:px-10">
+        <div className="relative flex items-center justify-center h-12 w-full mb-8 md:mb-16 px-4 md:px-10">
           {/* Animated Line - Responsive Width & Padding */}
           <motion.div
             initial={{ width: 0, opacity: 0 }}
@@ -43,7 +43,7 @@ const ProcessSection = () => {
           {/* Prompt Bubble */}
           <motion.div
             initial={{ x: 20 }}
-            whileInView={{ x: -50 }} // মোবাইলে ওভারল্যাপ এড়াতে দূরত্ব কমানো হয়েছে
+            whileInView={{ x: -65 }} // মোবাইলে ওভারল্যাপ এড়াতে দূরত্ব কমানো হয়েছে
             md={{ whileInView: { x: -100 } }} // বড় স্ক্রিনে দূরত্ব বাড়বে
             viewport={{ once: true }}
             className="bg-gray-200/80 backdrop-blur-sm border border-gray-300 px-4 py-2 md:px-8 md:py-2.5 rounded-full shadow-sm z-10 text-gray-700 text-xs md:text-base font-medium"
@@ -55,7 +55,7 @@ const ProcessSection = () => {
           {/* Application Bubble */}
           <motion.div
             initial={{ x: -20 }}
-            whileInView={{ x: 50 }}
+            whileInView={{ x: 65 }}
             md={{ whileInView: { x: 100 } }}
             viewport={{ once: true }}
             className="bg-orange-500 border border-orange-600 px-4 py-2 md:px-8 md:py-2.5 rounded-full shadow-lg z-10 text-white text-xs md:text-base font-semibold"
